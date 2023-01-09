@@ -1,0 +1,6 @@
+1、添加端口转发
+netsh interface portproxy add v4tov4 listenport=80 listenaddress=0.0.0.0 connectport=80 connectaddress=10.51.111.22
+2、删除端口转发
+netsh interface portproxy del v4tov4 listenport=80 listenaddress=0.0.0.0
+3、查看已存在的端口映射
+netsh interface portproxy show v4tov4
